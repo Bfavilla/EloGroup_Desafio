@@ -1,7 +1,8 @@
 <div id="tabelalead" class="container p-0" da>
   <div class="row">
-    <div class="col-12">
+    <div class="col-12 p-0 m-0">
       <div class="container" p-0>
+        <br>
         <button id="novoLeadBtn" type="button" class="btn btn-lg btn-primary" data-toggle="modal"
           data-target="#modalNovo">
           Criar Novo Lead
@@ -53,19 +54,19 @@
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="gridCheck1">
-                          <label class="form-check-label" for="gridCheck1">
+                          <label class="form-check-label" for="gridCheck2">
                             Produto Digital
                           </label>
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="gridCheck1">
-                          <label class="form-check-label" for="gridCheck1">
+                          <label class="form-check-label" for="gridCheck3">
                             Analytics
                           </label>
                         </div>
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" id="gridCheck1">
-                          <label class="form-check-label" for="gridCheck1">
+                          <label class="form-check-label" for="gridCheck4">
                             BPM
                           </label>
                         </div>
@@ -80,15 +81,14 @@
                     </div>
                 </div>
                 </form>
-                {{leads}}
-                {{leadService.leads}}
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container col-12">
+      <br>
       <table class="table table-hover table-bordered table-striped">
         <thead>
           <tr>
@@ -102,23 +102,34 @@
             <td data-drop="true" ng-re ng-model="list1" data-jqyoui-options
               jqyoui-droppable="{beforeDrop: 'beforeDrop'}">
             </td>
-            <td ngmodel="list2"></td>
-            <td ngmodel="list3"></td>
+            <td data-drop="true" ng-re ng-model="list2" data-jqyoui-options
+            jqyoui-droppable="{beforeDrop: 'beforeDrop'}"></td>
+            <td data-drop="true" ng-re ng-model="list3" data-jqyoui-options
+            jqyoui-droppable="{beforeDrop: 'beforeDrop'}"></td>
           </tr>
           <tr>
-            <td ng-model="list1">{{leadService.h43}}</td>
-            <td ngmodel="list2">{{leads}} </td>
-            <td ngmodel="list3">{{leadService.leads}}</td>
+            <td data-drop="true" ng-re ng-model="list1" data-jqyoui-options
+            jqyoui-droppable="{beforeDrop: 'beforeDrop'}"></td>
+            <td data-drop="true" ng-re ng-model="list2" data-jqyoui-options
+            jqyoui-droppable="{beforeDrop: 'beforeDrop'}"> </td>
+            <td data-drop="true" ng-re ng-model="list3" data-jqyoui-options
+            jqyoui-droppable="{beforeDrop: 'beforeDrop'}"></td>
           </tr>
           <tr>
-            <td ng-model="list1"></td>
-            <td ngmodel="list2"></td>
-            <td ngmodel="list3"></td>
+            <td data-drop="true" ng-re ng-model="list1" data-jqyoui-options
+            jqyoui-droppable="{beforeDrop: 'beforeDrop'}"></td>
+            <td data-drop="true" ng-re ng-model="list2" data-jqyoui-options
+            jqyoui-droppable="{beforeDrop: 'beforeDrop'}"></td>
+            <td data-drop="true" ng-re ng-model="list3" data-jqyoui-options
+            jqyoui-droppable="{beforeDrop: 'beforeDrop'}"></td>
           </tr>
           <tr>
-            <td ng-model="list1"></td>
-            <td ngmodel="list2"></td>
-            <td ngmodel="list3"></td>
+            <td data-drop="true" ng-re ng-model="list1" data-jqyoui-options
+            jqyoui-droppable="{beforeDrop: 'beforeDrop'}"></td>
+            <td data-drop="true" ng-re ng-model="list2" data-jqyoui-options
+            jqyoui-droppable="{beforeDrop: 'beforeDrop'}"></td>
+            <td data-drop="true" ng-re ng-model="list3" data-jqyoui-options
+            jqyoui-droppable="{beforeDrop: 'beforeDrop'}"></td>
           </tr>
         </tbody>
       </table>

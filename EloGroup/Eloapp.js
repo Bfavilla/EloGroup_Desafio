@@ -23,7 +23,6 @@ EloApp.config(function ($routeProvider,$locationProvider){
 });
 
 EloApp.service('signinService', function(){
-    this.h43="sim";
     this.usuario = {
         username:'',
         senha1:'',
@@ -34,12 +33,13 @@ EloApp.service('signinService', function(){
 });
 
 EloApp.service('leadService', function(){
-    this.h43="sim";
+
     this.leads = [
         {
             nome:'loja abc',
             email:'comercial.lojaabc@gmail.com',
             fone:'98765-4321',
+            
         }, 
         {
             nome:'loja doe',
@@ -103,13 +103,13 @@ EloApp.controller('secondController', ['$scope', 'signinService', function($scop
 EloApp.controller('tableController', ["$scope", '$q', 'leadService', function($scope,$q,leadService) {
     
     $scope.leads = leadService.leads;
-    $scope.$watch('leads', function(){
-        leadsService.leads = $scope.leads;
-    })
+
+    let test = leadService.leads;
       
     $scope.addText = function(text) {
-        $scope.leads.push(text);
-    }
+        test.push(text);
+
+    };
 
     $scope.form = {
         nome: '',
