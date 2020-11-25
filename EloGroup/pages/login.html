@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="card col">
+            <div class="card-header text-center"">
+                <h3 class="text-active">Ferramenta de Gereciamento</h1>
+                <h5>Log in</h4>
+            </div>
+            <div class="card-body justify-content-between text-center"">
+                <form name="loginForm">
+                    <label>Usuário:</label> <br>
+                    <input type="text" ng-model="logName" name="login" required> <hr>
+                    <label>Password:</label> <br>
+                    <input type="password" ng-model="logSenha" name="loginSenha" required ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/">
+                    <div ng-messages="loginForm.userSenha.$error">
+                        <div ng-message="pattern"> A Senha deve possuir pelo menos 8 caracteres, contendo ao
+                            menos, um caracter especial, um caracter numérico, um caracter
+                            alfanumérico        
+                        </div>
+                    </div> <br>
+                    <button ng-click="loginFeito()" type="button" class="btn btn-lg btn-primary">
+                        <a class="text-decoration-none" id="btnsignin" ng-if="logName === username && logName !=='' && logSenha === senha1 && logSenha !==''" href="#/tabela">Log in</a>
+                        <span ng-hide="logSenha === senha1 && loginForm.loginSenha.$dirty">Log in</span>
+                    </button>
+                </form>
+            </div>
+            <div class="card-footer text-center""><p class="mt-5 mb-3 text-muted">Ainda não tem um cadastro? <a href="#/">Cadastre-se</a> </p>
+            </div>
+            </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+

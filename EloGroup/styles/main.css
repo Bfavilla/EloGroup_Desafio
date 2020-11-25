@@ -1,0 +1,29 @@
+#btnsignin:link{
+    color: white;
+};
+
+#btnsignin:visited {
+    color: white;
+}
+#btnsignin:hover {
+    color: white;
+}
+#btnsignin:active {
+    color: white;
+}
+#btnsignin {
+    color: white;
+}
+
+.corpo {
+    padding: 20px;
+    margin: 200px auto;
+    
+}
+.card{
+    margin-top: 200px;
+    padding: 0px;
+}
+.card-header {
+ padding: 0px;
+}
